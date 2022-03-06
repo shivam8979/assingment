@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                /*css variables */
+                :root{
+                     --navbar-height:59px;
+                }
+                #logo{
+                    margin: 10px 34px;
+                }
+                #logo img{
+                    height: 59px;
+                    width: 60px;
+                    border-radius: 50%;
+                    margin: 3px 6px;
+                }
+                #navbar{
+                    display: flex;
+                    position: fixed;
+                }
+                #navbar ul{
+                    display: flex;
+                }
+                #navbar::before{
+                    content: "";
+                    background-color: black;
+                    position: absolute;
+                    height: 100px;
+                    width: 100vw;
+                    z-index: -1;
+                    opacity: 0.4;
+                       
+                }
+                #navbar ul li{
+                    list-style: none;
+                    font-size: 1.3rem;
+                    margin-top: 20px;
+                }
+                #navbar ul li a{
+                    color: white;
+                    display: block;
+                    padding: 3px 22px ;
+                    border-radius: 20px;
+                    text-decoration: none;
+                                     
+                }
+                #navbar ul li a:hover{
+                    color: black;
+                    background-color: white;
+
+                }
+                #mid{
+                    display: flex;
+                    flex-direction: column;
+                    height: 400px;
+                    padding: 3px 200px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                #mid::before{
+                    content: "";
+                    background: url("back.jpg") no-repeat center center/cover;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: -1;
+                    opacity: 0.89;
+                }
+                #mid h1{
+                    color: whitesmoke;
+                    text-align: center;
+                    
+                }
+                #mid p{
+                    color: white;
+                    text-align: center;
+                    font-size: 1.3rem;
+                }
+                /*utility classes */
+                .primary{
+                    font-size: 2.8rem;
+                    padding: 12px;
+                }
+                .btn{
+                    padding: 6px 20px;
+                    border:2px solid white;
+                    background-color: brown;
+                    color: white;
+                    margin: 17px;
+                    font-size: 1.2rem;
+                    border-radius: 10px;
+                    cursor: pointer;
+                   
+                }
+                label{
+                    font-size: 1rem;
+                    background-color: rgb(204, 29, 29);
+                    color: white;
+                    border-radius: 10px;
+                    padding: 2px 23px;
+                    border: 2px solid white;
+                   cursor: pointer;
+                   
+                }
+                #menu option{
+                    border: 2px solid black;
+                }
+                table{
+                    margin-top:12%;
+                    width: 100%;
+                    padding-left: 20px;
+                    border: 0;
+                }
+               .img1{
+                   width: 75%;
+                   border: 5px solid black;
+                   border-radius: 50px;
+               }
+               .img2{
+                   width: 70%;
+                   height: 10%;
+                   border: 5px solid black;
+                   border-radius: 50px;
+                   
+               }
+               .img3{
+                   width: 75%;
+                   border: 5px solid black;
+                   border-radius: 50px;
+               }
+               footer{
+                   width: 100vw;
+                   height: 100px;
+                   background-color: black;
+                   text-align: center;
+                   margin-top: 20px;
+                   padding: 20px;
+               }
+               h2{
+                   color: whitesmoke;
+                  
+                   
+               }
+            footer p{
+                color: white;
+               
+            }
+            
+                    </style>
+     </head>
+
+     <body>
+         <header>
+             <nav id="navbar">
+                 <div id="logo">
+                     <img class="img1" src="logo.jpeg">
+                 </div>
+                 <ul>
+                     <li class="item"><a href="#">Home</a></li>
+                     <li class="item"><a href="#">Services</a></li>
+                     <li class="item"><a href="#">About</a></li>
+                     <li class="item"><a href="#">Contect us</a></li>
+                     
+                 </ul>
+              
+             </nav>
+         </header>
+
+         <main id="mid">
+             <h1 class="primary">
+                 Welcome to foode haveli
+             </h1>
+             <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, harum cupiditate? Excepturi placeat recusandae minima. </p>
+             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corporis reiciendis, maxime nobis facere qui.</p>
+             <button class="btn">Order Now</button>
+            
+              
+            
+         </main>
+         <form>
+            <label>Menu bar</label>
+            <input type="text" name="dishe" list="menu">
+            <datalist id="menu">
+                <option value="indian food"></option>
+                <option value="thai food"></option>
+                <option value="see food"></option>
+                <option value="italian food"></option>
+            </datalist>
+         </form>
+            <table >
+               <td ><img  class="img1" src="./img1.jpeg"></td>
+               <td ><img  class="img2" src="./img2.jpeg"></td>
+               <td ><img  class="img3" src="./img3.jpeg"></td>
+            </table>
+             
+
+         <footer>
+             <h2>!!Thank You!!</h2>
+             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, animi.</p>
+         </footer>
+     </body>
+
+</html>
+
